@@ -47,7 +47,7 @@ function DrawGrids(grid) {
 function MakeObstracles(grid) {
     for (var i = 0; i < rows; i++) {
         for (var j = 0; j < cols; j++) {
-            grid[i][j].isAnObstrucle = random([0, 1, 1]);
+            grid[i][j].isAnObstrucle = random([0, 1, 2]);
             grid[i][j].h = dist(grid[i][j].posX, grid[i][j].posY, grid[rows - 1][cols - 1].posX, grid[rows - 1][cols - 1].posY);
         }
     }
